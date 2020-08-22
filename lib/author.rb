@@ -10,14 +10,21 @@ class Author
       post.author= self 
     end
     
-    
-   end 
-  
-  
-    
     def self.all
       @@all
-    end 
+    end
+    
+    def add_post_by_title(title)
+      post= Title.new(title)
+      add_title(title)
+    end
+    
+    def posts      
+    
+ end 
+  
+  
+    
     
     def add_song_by_name(name)
       song= Song.new(name)
